@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <PasswordField fx:id="CreatePW" layoutX="151.0" layoutY="97.0" onAction="#CreatePassword" prefHeight="59.0" prefWidth="281.0" promptText="Create Password" />
+      <PasswordField fx:id="VerifyPW" layoutX="151.0" layoutY="183.0" onAction="#VerifyPassWord" prefHeight="59.0" prefWidth="281.0" promptText="Verify Password" />
+      <Button fx:id="NextPW" layoutX="445.0" layoutY="295.0" mnemonicParsing="false" onAction="#PWNext" text="Next" />
+   </children>
+</Pane>
