@@ -1,4 +1,4 @@
-public abstract class Patron implements Library {
+public class Patron implements Library {
     String name;
     String email;
     int age;
@@ -7,10 +7,6 @@ public abstract class Patron implements Library {
     int renew;
 
     // Setters
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setAge(int age) {
         this.age = age;
     }
@@ -56,8 +52,9 @@ public abstract class Patron implements Library {
         return renew;
     }
 
-
-
-
+    public String patronInfo() {
+        return "Member name: " + this.getName() + ". Library Number: " + this.getLibraryNumber() + ". Email: " + this.getEmail()
+                + ". Age: " + this.getAge() + ". Donation Amount: " + this.getDonationAmount() + ". Number of renewals: " + this.getRenew();
+    }
 
 }
